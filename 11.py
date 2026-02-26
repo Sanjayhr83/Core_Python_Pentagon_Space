@@ -66,6 +66,13 @@ def outer():
     inner()
 outer()
 
+def train_model():
+    epochs = 5
+    def print_epoch():
+        print(f"Training for {epochs} epochs")
+    print_epoch()
+train_model()
+
 #higher order function and first order function
 def fun1():
     print("inside func1")
