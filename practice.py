@@ -4,4 +4,5 @@ def outer():
         print("inside inner")
     return inner
 ref=outer()
+print(ref)
 ref()
