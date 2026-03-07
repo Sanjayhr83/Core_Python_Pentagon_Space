@@ -1,4 +1,4 @@
-#filter(), map(), decorator
+#filter(), map(), decorator(A decorator is a function that modifies or extends the behavior of another function without changing its code)
 
 #write a program a collect 5 values from users and store in list
 l=[]
