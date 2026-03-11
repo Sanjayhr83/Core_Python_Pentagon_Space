@@ -138,3 +138,27 @@ p=person()
 p.dataaccess="guruji"
 res=p.dataaccess
 print(res)
+
+#converting private method into public method
+class dog:
+    def __init__(self):
+        self.breed="husky"
+    def __bark(self):   #private method
+        print("dog is barking")
+    def helper(self):   #public method
+        self.__bark()   #access any method or variable inside the class use "self" keyword
+d=dog()
+# d.__bark() it gives error because method in private mode
+d.helper()
+class pg:
+    def __init__(self):
+        pass
+    def __rent(self):   #private method
+        print(5000)
+    def __share(self):  #private method
+        print(4)
+    def total(self):    #public method
+        self.__rent()   #access any method or variable inside the class use "self" keyword
+        self.__share()
+p=pg()
+p.total()
