@@ -62,6 +62,17 @@ class dog(Animal):
 d=dog()
 d.sound()
 
+class Animal:
+    def sound(self):
+        print("Animals make different sounds")
+class Cat(Animal):
+    def sound(self):
+        super().sound()
+        print("Cat says meow")
+
+c = Cat()
+c.sound()
+
 #same name but diff number of parameter(python not support overloading)
 class A:
     def dis(self,a,b,c):
