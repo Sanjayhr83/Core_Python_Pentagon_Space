@@ -19,6 +19,14 @@ Abstract Methods
 from abc import ABC, abstractmethod
 """
 
+"""
+🔥 Abstraction vs Encapsulation
+Feature	         Abstraction         Encapsulation
+Focus	    Hiding complexity	    Hiding data
+How	        Abstract classes	    Private variables
+Example	    abstractmethod	        __variable
+"""
+
 from abc import ABC, abstractmethod
 
 class Animal(ABC):   #abstract class
