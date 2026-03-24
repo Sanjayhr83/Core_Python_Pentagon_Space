@@ -1,31 +1,31 @@
 # #polymorphism(The same method name can perform different actions depending on the object.)
 # # Poly = many
 # # Morph = forms
-#
-# class plane:
-#     def takeoff(self):
-#         print("Plane is Taking off")
-#     def fly(self):
-#         print("Plane is flying")
-# class Passenger(plane):
-#     def landing(self):
-#         print("Passenger Plane is landing")
-# class Cargo(plane):
-#     def landing(self):
-#         print("Cargo Plane is landing")
-# class Fighter(plane):
-#     def landing(self):
-#         print("Fighter Plane is landing")
-# p=Passenger()
-# c=Cargo()
-# f=Fighter()
-# def allowPlane(ref):
-#     ref.takeoff()
-#     ref.fly()
-#     ref.landing()
-# allowPlane(p)
-# allowPlane(c)
-# allowPlane(f)
+
+class plane:
+    def takeoff(self):
+        print("Plane is Taking off")
+    def fly(self):
+        print("Plane is flying")
+class Passenger(plane):
+    def landing(self):
+        print("Passenger Plane is landing")
+class Cargo(plane):
+    def landing(self):
+        print("Cargo Plane is landing")
+class Fighter(plane):
+    def landing(self):
+        print("Fighter Plane is landing")
+p=Passenger()
+c=Cargo()
+f=Fighter()
+def allowPlane(ref):
+    ref.takeoff()
+    ref.fly()
+    ref.landing()
+allowPlane(p)
+allowPlane(c)
+allowPlane(f)
 
 #bird example
 class Bird:
