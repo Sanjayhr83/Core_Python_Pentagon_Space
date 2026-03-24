@@ -110,3 +110,122 @@ shapes = [Rectangle(), Circle()]
 
 for s in shapes:
     s.area()
+
+from abc import ABC, abstractmethod
+
+class SmartDevice(ABC):
+    @abstractmethod
+    def turn_on(self):
+        pass
+    @abstractmethod
+    def turn_off(self):
+        pass
+class TV(SmartDevice):
+    def turn_on(self):
+        print("TV is ON")
+    def turn_off(self):
+        print("TV is OFF")
+class AC(SmartDevice):
+    def turn_on(self):
+        print("AC is ON")
+    def turn_off(self):
+        print("AC is OFF")
+devices = [TV(), AC()]
+
+for d in devices:
+    d.turn_on()
+    d.turn_off()
+
+# Notification System (Very Useful in Apps)
+from abc import ABC, abstractmethod
+
+class Notification(ABC):
+
+    @abstractmethod
+    def send(self):
+        pass
+
+class Email(Notification):
+    def send(self):
+        print("Sending Email")
+
+class SMS(Notification):
+    def send(self):
+        print("Sending SMS")
+
+class WhatsApp(Notification):
+    def send(self):
+        print("Sending WhatsApp Message")
+
+def notify(obj):
+    obj.send()
+
+notify(Email())
+notify(SMS())
+notify(WhatsApp())
+
+# Employee Salary System
+from abc import ABC, abstractmethod
+
+class Employee(ABC):
+
+    @abstractmethod
+    def calculate_salary(self):
+        pass
+
+class FullTime(Employee):
+    def calculate_salary(self):
+        print("Monthly salary: 50000")
+
+class PartTime(Employee):
+    def calculate_salary(self):
+        print("Hourly salary: 500 per hour")
+
+emps = [FullTime(), PartTime()]
+
+for e in emps:
+    e.calculate_salary()
+
+
+# Abstract Class with Partial Implementation
+from abc import ABC, abstractmethod
+
+class Vehicle(ABC):
+
+    def fuel_type(self):   # normal method
+        print("Uses fuel")
+
+    @abstractmethod
+    def start(self):
+        pass
+
+class Car(Vehicle):
+    def start(self):
+        print("Car starts with key")
+
+c = Car()
+c.fuel_type()
+c.start()
+
+#File Handling System (Advanced Concept)
+from abc import ABC, abstractmethod
+
+class FileHandler(ABC):
+
+    @abstractmethod
+    def read(self):
+        pass
+
+class TextFile(FileHandler):
+    def read(self):
+        print("Reading text file")
+
+class PDFFile(FileHandler):
+    def read(self):
+        print("Reading PDF file")
+
+files = [TextFile(), PDFFile()]
+
+for f in files:
+    f.read()
+
