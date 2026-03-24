@@ -32,3 +32,16 @@ print(z.task)
 print(z.task2)
 z.s.disp()
 z.s.disp()
+
+class A:
+    def dis(self):
+        print("I'm Class A ")
+        print("And i am base class")
+class C(A):
+    def dis(self):
+        print("I'm Class C ")
+        self.a=A()
+
+c=C()
+c.dis()
+c.a.dis()
