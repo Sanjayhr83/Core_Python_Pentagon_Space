@@ -45,3 +45,39 @@ class C(A):
 c=C()
 c.dis()
 c.a.dis()
+
+#Composed object
+class OS:
+    def __init__(self):
+        self.status=True
+        print("OS is ready")
+    def getos(self):
+        print("OS is installing")
+class Mobile:
+    def __init__(self,name):
+        self.mname=name
+        self.o=OS()
+        print("Mobile is ready")
+        print("with os installed")
+m=Mobile("Nokia")
+print(m.mname)
+print(m.o.status)
+m.o.getos()
+del m
+print(m.o.status)
+
+class Petrolbank:
+    def __init__(self):
+        print("The petrolbank name HP")
+    def price(self):
+        print("Petrol $104 per liter \nDiesel $94 per liter")
+class Bike:
+    def drive(self):
+        print("The bike is fill with Petrol")
+    def stop(self):
+        print("Bike is stop because Petrol is enough")
+        self.z=Petrolbank()
+a=Bike()
+a.drive()
+a.stop()
+a.z.price()
