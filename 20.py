@@ -81,3 +81,19 @@ a=Bike()
 a.drive()
 a.stop()
 a.z.price()
+
+class OS:
+    def __init__(self):
+        self.os="IOS 26.4"
+        print("OS is updating")
+    def update(self):
+        print("OS is updated")
+class Phone:
+    def name(self):
+        self.pname="Iphone 17 pro max"
+        print("My new phone is {}".format(self.pname))
+        self.oss=OS()
+p=Phone()
+p.name()
+print(p.oss.os)
+p.oss.update()
