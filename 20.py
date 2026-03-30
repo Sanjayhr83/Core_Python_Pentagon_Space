@@ -1,4 +1,6 @@
 #has-a relationship
+
+#composed object
 class Radio:
     def turnon(self,x):
         if x==1:
@@ -97,3 +99,47 @@ p=Phone()
 p.name()
 print(p.oss.os)
 p.oss.update()
+
+#aggregate object
+class charger:
+    def __init__(self,name):
+        self.cname=name
+    def getcharger(self):
+        print("charger is  plugged in")
+
+class mobile:
+    def __init__(self,name):
+        self.mname=name
+        self.c=""
+    def hasmobile(self,p):
+        self.c=p
+m1=mobile("IQOO")
+c1=charger("Flash(C_pin)")
+m1.hasmobile(c1)
+print(m1.mname)
+m1.c.getcharger()
+del m1
+print(c1.cname)
+c1.getcharger()
+
+class Animal:
+    def __init__(self,name):
+        self.aname=name
+    def action(self):
+        print("Animal are mammal,reptiles,birds,amphibians")
+class lion:
+    def __init__(self,name):
+        self.lname=name
+        self.z=""
+    def attitude(self,x):
+        print("Lion is a king and mammal")
+        self.z=x
+a1=Animal("Tiger")
+l1=lion("Simba")
+l1.attitude(a1)
+print(l1.z.aname)
+l1.z.action()
+print(l1.lname)
+del l1
+a1.action()
+print(a1.aname)
