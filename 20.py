@@ -185,3 +185,38 @@ f.d.quality()
 del f
 b.quality()
 print(b.bname)
+
+#combining of both composition and aggregation
+class cycle:
+    def __init__(self,name):
+        self.cname=name
+    def buycycle(self):
+        print("Buy a new cycle")
+
+class heart:
+    def __init__(self,status):
+        self.status=status
+    def hasheart(self,):
+        print("please enter correct status")
+
+class person:
+    def __init__(self, name):
+        self.pname = name
+        self.c=""
+        self.h=heart("empty")
+    def hasperson(self, p):
+        print("human heart")
+        self.c = p
+c1=cycle("Ladybird")
+p1=person("Abhi")
+c1.buycycle()
+print(c1.cname)
+p1.hasperson(c1)
+print(p1.pname)
+p1.c.buycycle()
+print(p1.h.status)
+p1.h.hasheart()
+print(p1.c.cname)
+del p1
+c1.buycycle()
+print(c1.cname)
