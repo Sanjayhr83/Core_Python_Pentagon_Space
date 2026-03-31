@@ -100,6 +100,26 @@ p.name()
 print(p.oss.os)
 p.oss.update()
 
+class Animal:
+    def __init__(self):
+        self.name="animal"
+    def eat(self):
+        print("eating")
+class dog:
+    def __init__(self):
+        self.name="dog"
+    def eated(self):
+        print("dog eating pedigree")
+        self.c=Animal()
+d=dog()
+d.eated()
+print(d.name)
+d.c.eat()
+print(d.c.name)
+del d
+print(d.name)
+
+
 #aggregate object
 class charger:
     def __init__(self,name):
@@ -143,3 +163,25 @@ print(l1.lname)
 del l1
 a1.action()
 print(a1.aname)
+
+class bunk:
+    def __init__(self,name):
+        self.bname=name
+    def quality(self):
+        print(f"{self.bname} is top quality")
+class bike:
+    def __init__(self,name):
+        self.biname=name
+        self.d=""
+    def milage(self,e):
+        print(f"{self.biname } is heavy bike")
+        self.d=e
+b=bunk("HP")
+f=bike("Bajaj")
+f.milage(b)
+print(f.d.bname)
+print(f.biname)
+f.d.quality()
+del f
+b.quality()
+print(b.bname)
