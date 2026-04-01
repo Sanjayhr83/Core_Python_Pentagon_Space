@@ -18,7 +18,6 @@ print(z.max)
 z.r.turnon(1)
 z.r.turnon(0)
 
-
 class Solution:
     def dis(self):
         print("solution is not good")
@@ -119,6 +118,28 @@ print(d.c.name)
 del d
 print(d.name)
 
+class PS:
+    def __init__(self):
+        self.batch="jan 25th"
+    def head(self):
+        print("Shashank sir is python head")
+class abhi:
+    def __init__(self):
+        self.comb="SD"
+    def course(self):
+        self.ins="TAP"
+        print("Java full stack is course")
+        self.p=PS()
+
+a1=abhi()
+print(a1.comb)
+a1.course()
+print(a1.ins)
+a1.p.head()
+print(a1.p.batch)
+del a1
+a1.course()
+
 
 #aggregate object
 class charger:
@@ -186,37 +207,57 @@ del f
 b.quality()
 print(b.bname)
 
-#combining of both composition and aggregation
-class cycle:
-    def __init__(self,name):
-        self.cname=name
-    def buycycle(self):
-        print("Buy a new cycle")
-
-class heart:
-    def __init__(self,status):
-        self.status=status
-    def hasheart(self,):
-        print("please enter correct status")
-
-class person:
-    def __init__(self, name):
-        self.pname = name
+class PS:
+    def __init__(self):
+        self.batch="jan 25th"
+    def head(self):
+        print("Shashank sir is python head")
+class abhi:
+    def __init__(self):
+        self.comb="SD"
         self.c=""
-        self.h=heart("empty")
-    def hasperson(self, p):
-        print("human heart")
-        self.c = p
-c1=cycle("Ladybird")
-p1=person("Abhi")
-c1.buycycle()
-print(c1.cname)
-p1.hasperson(c1)
+    def course(self,P):
+        self.ins="TAP"
+        print("Java full stack is course")
+        self.c=P
+a1=abhi()
+p1=PS()
+a1.course(p1)
+print(a1.ins)
+a1.c.head()
+print(a1.c.batch)
+del a1
+p1.head()
+
+
+#combining of both composition and aggregation
+class heart:
+    def __init__(self):
+        self.status="empty"
+    def heartattack(self):
+        self.health="good"
+        print("Heart is pumping")
+class cycle:
+    def __init__(self):
+        self.cname="Atlos"
+    def buycycle(self):
+        print("Person buy new cycle")
+class person:
+    def __init__(self,name):
+        self.pname=name
+        self.c=cycle()
+        self.z=""
+    def hasperson(self,P):
+        self.z=P
+p1=person("Ram")
+h1=heart()
+p1.hasperson(h1)
 print(p1.pname)
 p1.c.buycycle()
-print(p1.h.status)
-p1.h.hasheart()
 print(p1.c.cname)
+print(p1.z.status)
+p1.z.heartattack()
+print(p1.z.health)
 del p1
-c1.buycycle()
-print(c1.cname)
+print(h1.status)
+print(p1.c.cname)
