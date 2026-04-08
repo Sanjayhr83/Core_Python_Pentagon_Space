@@ -1,3 +1,5 @@
+#Instance variable and static variable
+
 class TV:
     def __init__(self):
         self.brand = "SAMSUNG"  #instance variable
@@ -30,3 +32,23 @@ f2=Farmer(500000,5)
 f1.loan()
 f2.loan()
 print(Farmer.r)
+
+
+class hero:
+    wife = "Vijaya Lakshmi" #static variable
+
+    def __init__(self, name, age, movie):
+        self.name = name    #instance variable
+        self.age = age      #instance variable
+        self.movies = movie #instance variable
+
+    def fimaly(self):
+        print(f"Darshan wife is {hero.wife}")   #access the static variable in method using class name
+
+
+h1 = hero("Darshan", 52, 54)
+print(h1.name, h1.age, h1.movies)
+h1.area = "RR nagara"
+print(h1.area)
+
+h1.fimaly() #calling method
