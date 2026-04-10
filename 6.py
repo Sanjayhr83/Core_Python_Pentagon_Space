@@ -8,6 +8,9 @@ for i in "rahul", "ramya":
     print(i)
 for i in "rahul":
     print(i)
+#printing tables using for loop
+for i in range(1,11):
+    print(f"2 X {i} = {i*2}")
 
 #range function(start,stop,step)
 for i in range(100):
