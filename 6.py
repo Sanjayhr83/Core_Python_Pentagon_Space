@@ -27,3 +27,9 @@ i = 0  #initialize
 while i <= 2:  #condition
     print("hello")
     i += 1  #increment
+
+#printing tables using while loop
+i=1
+while i<11:
+    print(f"8 X {i} = {i * 8}")
+    i=i+1
