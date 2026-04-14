@@ -123,7 +123,7 @@ s=lambda a,b:a*b
 res=s(5,7)
 print(res)
 
-#LEBB rule(local,enclose,global,built-in scopes)
+#LEGB rule(local,enclose,global,built-in scopes)
 from math import pi #built-in
 #pi=10 #global scope
 def outer():

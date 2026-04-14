@@ -12,3 +12,20 @@ try:
     print(res)
 except Exception as e:
     print("Error is",e)
+
+def fun1():
+    print("entering function1")
+    try :
+        fun2()
+    except Exception as e:
+        print("Error is",e)
+    print("leaving function1")
+
+def fun2():
+    print("entering function2")
+    res=10/0
+    print(res)
+    print("leaving function2")
+print("program start")
+fun1()
+print("program end")
