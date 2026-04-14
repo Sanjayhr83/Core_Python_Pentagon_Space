@@ -45,7 +45,6 @@ def course():
     print(res)
     print("Fees is free because CSR Drive")
 
-
 print("Ending of 7th Semester")
 ps()
-print("Ending of Engineering"
+print("Ending of Engineering")
