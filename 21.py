@@ -16,16 +16,36 @@ except Exception as e:
 def fun1():
     print("entering function1")
     try :
-        fun2()
+        fun2()  # if error occur here then go to except block
     except Exception as e:
         print("Error is",e)
     print("leaving function1")
 
 def fun2():
     print("entering function2")
-    res=10/0
+    res=10/0    # in this line error will occur and go & hit to PVM, enter to except block show which type of error and PVM create superate block of memory with address
     print(res)
     print("leaving function2")
 print("program start")
 fun1()
 print("program end")
+
+def ps():
+    print("Starting internship....")
+    try:
+        course()  # if error occur here then go to except block
+    except Exception as e:
+        print(f"Error: {e}")
+    print("Internship completed....")
+
+
+def course():
+    print("...Course is Python full stack...")
+    res = 10 / 0  # in this line error will occur and go & hit to PVM, enter to except block show which type of error and PVM create superate block of memory with address
+    print(res)
+    print("Fees is free because CSR Drive")
+
+
+print("Ending of 7th Semester")
+ps()
+print("Ending of Engineering"
