@@ -66,7 +66,7 @@ print(res2)
 res2=list(map(lambda num:num+10,l)) #using lambda function
 print(res2)
 
-#decorator
+#decorator : Accessing code from one function to another function and if we want to we can modify it without affecting the main code
 def main():
     print("main function")
 def outer(ptr):
@@ -100,3 +100,18 @@ def outer(ptr):
     return inner
 ref=outer(main)
 ref()
+
+
+def place():    #Main code
+    print("BTM is my location...")
+
+def institute(ptr): #outer function
+    print("Pentagon Space is my institute...")
+    def course():   #inner function
+        print("Course Python full stack is my course...")
+        ptr()   #calling main function as a parameter
+        print("Afternoon batch")
+    return course   #return the inner function and not calling the inner function
+
+ref=institute(place)    #main function pass as a parameter to institute function
+ref() #innner function return with function, now ref action as a inner function
