@@ -115,3 +115,20 @@ def institute(ptr): #outer function
 
 ref=institute(place)    #main function pass as a parameter to institute function
 ref() #innner function return with function, now ref action as a inner function
+
+
+def place():
+    a=input("enter a location : ")
+    print("THE LOCATION OF THE COLLEGE IS ",a)
+
+def gec(ptr):
+    b=input("enter a college_name : ")
+    print("THE COLLEGE IS ",b)
+    def condidate():
+        c=input("enter a student name : ")
+        print("THE STUDENT NAME IS ",c)
+        ptr()
+    return condidate
+
+ref=gec(place)
+ref()
