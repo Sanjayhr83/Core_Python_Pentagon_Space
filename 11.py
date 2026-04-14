@@ -144,3 +144,12 @@ ref=outer()
 print(ref)  #now, ref is a special function it is hold inner function, you print the ref it is show memory address of the ref
 ref()   # you call the ref() it show inner function print statement
 
+def course():
+    print("the institute is Pentagon Space")
+    print("The location is BTM")
+    def place():
+        print("The course is python full stack")
+    return place
+
+ref=course()
+ref()
