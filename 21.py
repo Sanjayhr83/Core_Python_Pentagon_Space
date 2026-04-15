@@ -4,6 +4,7 @@ try : Risk code written in this block
 except: To know the error is occurring
 else : it this run when except block not show error
 finally: it is run always end to the execution code block
+raise : allows you to force an error to occur
 """
 a=int(input("enter a value : "))
 b=int(input("enter a value : "))
@@ -48,3 +49,49 @@ def course():
 print("Ending of 7th Semester")
 ps()
 print("Ending of Engineering")
+
+#Rethrough error in Exceptional handling (using raise keyword)
+def fun1():
+    print("entering function1")
+    try :
+        fun2()  # if error occur here then go to except block
+    except Exception as e:
+        print("Error is",e)
+    print("leaving function1")
+
+def fun2():
+    print("entering function2")
+    try :
+        res=10/0
+        print(res)
+    except Exception as e:
+        print("Error is",e)
+        raise e
+    print("leaving function2")
+print("Program start")
+fun1()
+print("Program end")
+
+
+#finally block
+def fun1():
+    print("entering function1")
+    try :
+        fun2()  # if error occur here then go to except block
+    except Exception as e:
+        print("Error is",e)
+    print("leaving function1")
+
+def fun2():
+    print("entering function2")
+    try :
+        res=10/0
+        print(res)
+    except Exception as e:
+        print("Error is",e)
+        raise e
+    finally:
+        print("leaving function2")
+print("Program start")
+fun1()
+print("Program end")
