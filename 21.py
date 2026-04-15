@@ -95,3 +95,25 @@ def fun2():
 print("Program start")
 fun1()
 print("Program end")
+
+def movie1():
+    print("Movie starting")
+    try:
+        movie2()
+    except Exception as e:
+        print("sound is not hearing")
+    print("Movie ending")
+
+def movie2():
+    print("second Movie starting")
+    try:
+        t=15/0
+        print(t)
+    except Exception as e:
+        print("movie is very bad")
+        raise e
+    finally:
+        print("Second Movie ending")
+print("Ticket conform")
+movie1()
+print("Day completed")
