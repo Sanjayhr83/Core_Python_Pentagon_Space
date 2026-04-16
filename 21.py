@@ -117,3 +117,21 @@ def movie2():
 print("Ticket conform")
 movie1()
 print("Day completed")
+
+
+#Handling Specific error or types of error
+try:
+    a=int(input("Enter a number : "))
+    b=int(input("Enter another number : "))
+    res=a/b
+    print(res)
+except ValueError as e:
+    print(e)
+except ZeroDivisionError as e:
+    print(e)
+except NameError as e:
+    print(e)
+except TypeError as e:
+    print(e)
+except Exception as e:
+    print("error occured")
