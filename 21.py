@@ -147,3 +147,26 @@ except (ValueError,ZeroDivisionError) as e:
 
 except Exception as e:
     print("error occured")
+
+#Handling specific error or types of error
+try:
+    a = int(input("Enter a number : "))
+    b = int(input("Enter another number : "))
+    res = a / b
+    print(res)
+except Exception as e:
+    print("error occured")
+    print(e.__str__())
+    print(e)
+
+#else block : the program runs without error else block run, once except block runs else block can't run
+try:
+    a = int(input("Enter a number : "))
+    b = int(input("Enter another number : "))
+    res = a / b
+    print(res)
+except Exception as e:
+    print("error occured")
+    print(e.__str__())  #same as a print(e)
+else:
+    print("program run successfully ")
