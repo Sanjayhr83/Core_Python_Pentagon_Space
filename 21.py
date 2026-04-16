@@ -135,3 +135,15 @@ except TypeError as e:
     print(e)
 except Exception as e:
     print("error occured")
+
+#Single Except block for multiple exception
+try:
+    a=int(input("Enter a number : "))
+    b=int(input("Enter another number : "))
+    res=a/b
+    print(res)
+except (ValueError,ZeroDivisionError) as e:
+    print(e)
+
+except Exception as e:
+    print("error occured")
