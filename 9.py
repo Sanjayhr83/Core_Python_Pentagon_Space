@@ -56,6 +56,27 @@ print(r2)
 print(r3)
 print(r4)
 
+class college:
+    def clsroom(self):
+        self.rooms = 15
+        print("15+ classrooms in college")
+
+    @classmethod
+    def seminar(cls):
+        cls.smrhall= 3
+        print("Total seminar hall in college ")
+
+    @staticmethod
+    def faculty():
+        print("30+ faculties")
+
+c1=college()
+c1.clsroom()
+print(c1.rooms)
+c1.seminar()
+print(c1.smrhall)
+c1.faculty()
+
 #default argument and keyword argument
 class demo:
     def disp(self,a=10,b=20,c=30):
