@@ -1,4 +1,5 @@
 #datatype and variable
+
 a=10
 b=10
 c=10
@@ -8,7 +9,7 @@ print(id(b))
 print(id(c))
 print(id(d))
 
-#types
+#types in printing the variable like :- print(type(x))
 x=1 #class int
 print(x)
 print(type(x))
