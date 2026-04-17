@@ -1,4 +1,4 @@
-#standard way to declare a class
+#standard way to write a class
 class student:
     def __init__(self,name,age):    #name and age is parameters
         self.name = name
