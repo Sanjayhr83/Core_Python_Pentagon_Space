@@ -3,9 +3,10 @@ import keyword
 print(keyword.kwlist)
 print(f"Number of keywords: {len(keyword.kwlist)}")
 
+#constructor : it is special type of function is automatically called when an object of a class is instantiated.
 class Fan:   #class
     def __init__(self):     #constructor
-        self.brand="usha"   #objects
+        self.brand="usha"   #instance variable
         self.color="white"
         self.cost=3000
         self.wings=3
