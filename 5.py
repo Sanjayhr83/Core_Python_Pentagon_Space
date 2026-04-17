@@ -1,4 +1,9 @@
 #Condition statements(if,elif,else)
+
+'''
+there is no do-while loop and switch case in python ,but match case in python it is support only python 3.10+ versions
+'''
+
 a=int(input("Enter a number: "))
 b=int(input("Enter a number: "))
 if a>b:
