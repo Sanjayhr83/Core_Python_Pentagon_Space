@@ -1,4 +1,9 @@
 #static method and class method
+
+'''
+In static and class methods we mention method name in decorator using @
+'''
+
 class Mobile:
     def __init__(self):
         self.name = "nokia"
