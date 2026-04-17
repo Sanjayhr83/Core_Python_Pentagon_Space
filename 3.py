@@ -1,3 +1,4 @@
+#adding , modifying, deleting the variable outside the class
 class Heroine:
     def __init__(self):
         self.name= "Rukku"
