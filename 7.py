@@ -1,6 +1,40 @@
-#Instance variable and static variable
+#standard way to declare a class
+class student:
+    def __init__(self,name,age):    #name and age is parameters
+        self.name = name
+        self.age = age
+s1=student("Abhi",21)   # values accepted by parameters
+print(s1.name)
+print(s1.age)
+s2=student("Ram",22)
+print(s2.name)
+print(s2.age)
 
+#varies way to declare the instance variable (inside the constructor, inside the methods, outside the class)
+class clg:
+    def __init__(self):
+        self.clgname = "GEC Challakere" #inside the constructor
+    def clsroom(self):
+        self.rooms= 50  #inside the methods
+        self.smrroom = 3    #inside the methods
+    def door(self):
+        self.maindoor = 1   #inside the methods
+        self.doors="every rooms have a door"    #inside the methods
+c1=clg()
+print(c1.clgname)
+c1.clsroom()
+print(c1.rooms)
+print(c1.smrroom)
+c1.facultiesroom = "20+"    #outside the class(using reference object)
+print(c1.facultiesroom)
+c1.door()
+print(c1.maindoor)
+print(c1.doors)
+
+
+#Instance variable and static variable
 class TV:
+    price= 21000    #static variable
     def __init__(self):
         self.brand = "SAMSUNG"  #instance variable
         self.cost = 25000       #instance variable
@@ -10,6 +44,7 @@ class TV:
         print(self.color)
 
 T1 = TV()
+print(T1.price)
 print(T1.brand)
 print(T1.cost)
 T1.display()  #method only run when method is call
