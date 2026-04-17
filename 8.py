@@ -1,3 +1,18 @@
+'''
+Method : method is a behaviour of a object and it will when it is called
+
+Types of methods:
+1.instance method : using (self) keyword
+2.static method : using () nothing as a keyword
+3.class method  : using (cls) keyword
+
+In instance method their is 4 types :
+1.no parameter no return value
+2.with parameter no return value
+3.no parameter with return value
+4.with parameter with return value
+'''
+
 #no parameter no return value(activation record)
 class Calculator:
     def __init__(self):
@@ -44,7 +59,7 @@ x=30
 y=40
 c2.add(x,y)
 
-##with parameter with return value
+#with parameter with return value
 class Calculator:
     def __init__(self):
         self.color="black"
