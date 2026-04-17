@@ -115,16 +115,32 @@
 # print(r3)   #12
 # print(r4)   #0.75
 
-#Actual parameter and formal parameter
-class calci:
-    def __init__(self):
-        self.brand="casio"
+# #Actual parameter and formal parameter
+# class calci:
+#     def __init__(self):
+#         self.brand="casio"
+#
+#     def add(self,a,b):  #formal parameter (it is access the values from the Actual parameter
+#         c=a+b
+#         print(c)
+# c=calci()
+# x=5
+# y=10
+# c.add(x,y)  #the x and y is Actual parameter (It is carry the values into the method)
 
-    def add(self,a,b):  #formal parameter (it is access the values from the Actual parameter
-        c=a+b
-        print(c)
-c=calci()
-x=5
-y=10
-c.add(x,y)  #the x and y is Actual parameter (It is carry the values into the method)
+# default argument and keyword argument
+class demo:
+    def display(self,a=10,b=20,c=30):
+        print(a,b,c)
+d=demo()
+d.display()  #10 20 30
+x=11
+y=22
+z=33
+d.display(x,y,z)  #11 22 33
+d.display(x)  #11 20 30
+d.display(y)  #22 20 30
+d.display(z)  #33 20 30
+d.display(a=x,b=y,c=z)  #11 22 33
+d.display(a=z)  #33 20 30
 
