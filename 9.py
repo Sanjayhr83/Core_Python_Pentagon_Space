@@ -19,6 +19,27 @@ m1.hang()
 Mobile.charge()
 Mobile.hang()
 
+class Mobile:
+    def battery(self):
+        self.charge= "80%"
+
+    @staticmethod
+    def call():
+        recharge="Recharge complete successfully"
+        return recharge
+
+    @classmethod
+    def color(cls):
+        cls.color1 = "purple"
+        cls.color2 = "blue"
+        cls.color3 = "green"
+        return f"{cls.color1}, {cls.color2}, {cls.color3}"
+
+m1=Mobile()
+m1.battery()
+print(m1.charge)
+print(m1.call())
+print(m1.color())
 class Calci:
     def operation(self,a,b):
         c1=a+b
