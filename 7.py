@@ -10,6 +10,23 @@ s2=student("Ram",22)
 print(s2.name)
 print(s2.age)
 
+class mobile:
+    def __init__(self, name,price,color):
+        self.name = name
+        self.price = price
+        self.color = color
+m1=mobile("vivo",21000,"purple")
+print(m1.name)
+print(m1.price)
+print(m1.color)
+print(m1.name,m1.price,m1.color)
+
+m2=mobile("oppo",26000,"white")
+print(m2.name)
+print(m2.price)
+print(m2.color)
+print(m2.name,m2.price,m2.color)
+
 #varies way to declare the instance variable (inside the constructor, inside the methods, outside the class)
 class clg:
     def __init__(self):
