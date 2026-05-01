@@ -127,3 +127,21 @@ print(l[2:6:2])
 print(l[-2:-7])
 print(l[-8:5])
 print(l[-8:-3])
+
+#arthematic operators in list
+l1=[10,20,30]
+l2=[40,50,60]
+
+l3=l1+l2
+print(l3)  #[10, 20, 30, 40, 50, 60]
+
+#l4=l1*l2
+# print(l4) #error
+# l4=l1-l2
+# print(l4) #error
+
+l5=l1*2
+print(l5) #[10, 20, 30, 10, 20, 30]
+
+# l6 = l1/l2
+# print(l6) #error
