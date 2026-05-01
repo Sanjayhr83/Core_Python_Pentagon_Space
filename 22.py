@@ -145,3 +145,8 @@ print(l5) #[10, 20, 30, 10, 20, 30]
 
 # l6 = l1/l2
 # print(l6) #error
+
+#enumerate
+l=[10,20,30,40]
+for ind,val in enumerate(l):
+    print(ind,val)
