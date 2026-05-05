@@ -150,3 +150,32 @@ print(l5) #[10, 20, 30, 10, 20, 30]
 l=[10,20,30,40]
 for ind,val in enumerate(l):
     print(ind,val)
+
+"""Q. sort the list and all non-zero values in first and zero's should be last"""
+l=[1,0,2,0,3,0,4]
+l1=[]
+l2=[]
+for i in l:
+    if i!=0:
+        l1.append(i)
+    else:
+        l2.append(i)
+print(l1)
+print(l2)
+l3=(l1+l2)
+print(l3)
+
+"""Q. reverse the list without using built-in methods"""
+rev=[]
+n=len(l3)
+for i in range(n-1,-1,-1):
+    rev.append(l3[i])
+print(rev)
+    #OR
+l3=[1,4,2,34,83,65,74]
+rev=[]
+n=len(l3)
+for i in range(n-1,-1,-1):
+    rev.insert(n-1,l3[i])
+print(rev)
+
