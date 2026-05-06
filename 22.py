@@ -179,3 +179,20 @@ for i in range(n-1,-1,-1):
     rev.insert(n-1,l3[i])
 print(rev)
 
+#built-in methods in list
+l=[10,20,30]
+print(l)
+l.append(40)
+print(l)
+# l.append([50,60])
+print(l)
+l.extend([100,200,300])
+print(l)
+l.pop()
+print(l)
+l.remove(20)
+print(l)
+l.clear()
+print(l)
+del l
+print(l)
