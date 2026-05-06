@@ -195,4 +195,13 @@ print(l)
 l.clear()
 print(l)
 del l
+# print(l)
+
+#list comprehension
+l=[1,2,3,4]
+l1=[i for i in l if i%2==0]
+print(l1)
+
+#type casting
+l=list(range(10,16))
 print(l)
