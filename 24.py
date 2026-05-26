@@ -54,3 +54,25 @@ s2={1,2} #child->subset
 print(s1.issubset(s2)) #false
 print(s1.issuperset(s2)) #True
 print(s2.issuperset(s1)) #False
+
+#disjoint()
+s1={1,2,3,4}
+s2={3,4,5,6}
+s3={5,6,7,8}
+print(s1.isdisjoint(s2))
+print(s2.isdisjoint(s3))
+print(s1.issuperset(s3))
+
+#frozenset() : it is a immutable version of a set
+"""
+syntax of frozenset:
+        variable_name=frozenset([val1,val2,......val_n])
+"""
+s1={10,20,30,40}
+s2=frozenset([1,2,3,4])
+print(s1)
+print(s2)
+s1.add(50)
+print(s1)
+s2.add[5] #error because frozenset is immutable
+print(s2)
