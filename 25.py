@@ -1,4 +1,4 @@
-#dictionary
+#dictionary : key and value pair
 student={
     "name":"sanju",
     "age":27,
@@ -10,7 +10,6 @@ student["mob"]=7411
 print(student)
 student["age"]=21
 print(student)
-
 
 #iterating dictionary
 employee={
