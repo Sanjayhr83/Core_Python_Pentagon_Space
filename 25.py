@@ -44,6 +44,6 @@ student={
     }
 }
 print(student)
-print(student["age"])
-print(student["address"]["resi"])
-print(student["phone_num"]["landline"])
+print(student["age"]) #1D
+print(student["address"]["resi"]) #2D
+print(student["phone_num"]["landline"]) #2D
