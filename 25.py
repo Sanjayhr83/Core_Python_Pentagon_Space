@@ -47,3 +47,35 @@ print(student)
 print(student["age"]) #1D
 print(student["address"]["resi"]) #2D
 print(student["phone_num"]["landline"]) #2D
+
+#Shallow copy and deep copy in dictionary
+student={
+    "name":"sanju",
+    "age":20
+}
+print(student)
+s1=student #shallow copy
+s2=student.copy() #deep copy
+student["age"]=21
+print(student)
+print(s1)
+print(s2)
+print(student)
+
+#achieving the deep copy in nested dictionary
+import copy
+hero={
+    "name":"ram",
+    "addr":{
+        "res":"kengeri",
+        "perm":"BTM"
+    }
+}
+print(hero)
+h1=hero.copy() #shallow copy
+h2=copy.deepcopy(hero) #deep copy
+hero["addr"]["perm"]="Majestic"
+print(hero)
+print(h1)
+print(hero)
+print(h2)
