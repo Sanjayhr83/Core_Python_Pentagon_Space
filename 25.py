@@ -79,3 +79,16 @@ print(hero)
 print(h1)
 print(hero)
 print(h2)
+
+#zip() in dictionary
+emp_id=[101,102,103,104]
+names=["shaky","rahul","rakshith","nehru"]
+res=dict(zip(emp_id,names)) #emp_id="keys" & names="values
+print(res)
+mob=[11,420,840,7]
+addr=["pentagon","Thailand","russia","india"]
+# info=dict(zip(emp_id,names,mob,addr)) #error because interpreter confuse to take which one is key which one value
+# print(info)
+res1=list(zip(names,mob,addr))
+final_info=dict(zip(emp_id,res1))
+print(final_info)
