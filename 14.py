@@ -42,6 +42,28 @@ student.set_age(21)  # Modifying age with setter
 print("Updated Age:", student.get_age())
 
 
+class pen:
+    def __init__(self, amount):
+        self.__fees = amount
+        self.__course = ""
+
+    def setter(self, val1, val2):
+        if val1 > 0:
+            self.__fess = val1
+            self.__course = val2
+
+    def getter(self):
+        return f"the fees is {self.__fees} and couse is {self.__course}"
+
+
+p1 = pen(27000)
+res = p1.getter()
+print(res)
+
+p1.setter(28000, "PFS")
+res1 = p1.getter()
+print(res1)
+
 #identifiers(public,_protected,__private)
 #Protected Access Modifier
 class Student:
