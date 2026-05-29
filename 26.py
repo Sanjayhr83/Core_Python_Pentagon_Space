@@ -36,9 +36,9 @@
 # print(data)
 # ptr3.close()
 
-#readlines()
+# readlines()
 # ptr4=open("sanju.txt","r")
-# data=ptr4.readliness()
+# data=ptr4.readlines() #['CristanoRonaldo\n', 'sanju\n', 'abhi\n', 'rahul\n', 'shashank \n', 'nehru\n']
 # print(data)
 # ptr4.close()
 
@@ -46,24 +46,24 @@
 #tell() and seek()
 #tell() : it will give the current position of the cursor
 #seek() : using this seek() method we can move the cursor from one position to another position
-ptr=open("sanju.txt","r")
-pos1=ptr.tell()
-res1=ptr.read(8)
-print(res1) #Cristano
-
-pos2=ptr.tell()
-print(pos2) #8
-
-ptr.seek(8)
-pos3=ptr.tell()
-print(pos3) #8
-
-ptr.seek(0)
-pos4=ptr.tell()
-print(pos4) #0
-
-res2=ptr.read(15)
-print(res2) #CristanoRonaldo
-pos5=ptr.tell()
-print(pos5)
-ptr.close()
+# ptr=open("sanju.txt","r")
+# pos1=ptr.tell()
+# res1=ptr.read(8)
+# print(res1) #Cristano
+#
+# pos2=ptr.tell()
+# print(pos2) #8
+#
+# ptr.seek(8)
+# pos3=ptr.tell()
+# print(pos3) #8
+#
+# ptr.seek(0)
+# pos4=ptr.tell()
+# print(pos4) #0
+#
+# res2=ptr.read(15)
+# print(res2) #CristanoRonaldo
+# pos5=ptr.tell()
+# print(pos5)
+# ptr.close()
