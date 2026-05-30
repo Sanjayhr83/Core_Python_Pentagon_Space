@@ -42,7 +42,6 @@
 # print(data)
 # ptr4.close()
 
-
 #tell() and seek()
 #tell() : it will give the current position of the cursor
 #seek() : using this seek() method we can move the cursor from one position to another position
