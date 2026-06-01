@@ -1,3 +1,9 @@
+"""
+Pickling and unpickling
+        or
+serialization and de-serialization
+"""
+
 import pickle
 
 class employee:
