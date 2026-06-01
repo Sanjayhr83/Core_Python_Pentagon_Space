@@ -25,4 +25,14 @@ e=pickle.load(f) #unpickling using load() method
 e.display()
 f.close()
 
-#take a list and do pickling, unpickling
+# 1. Take a list and perform pickling (serialization)
+l = [1, 2, 3, 4, 5]
+f1 = open("sanju.txt", "wb")
+pickle.dump(l, f1)
+f1.close()
+
+# 2. Open the file and perform unpickling (deserialization)
+f1 = open("sanju.txt", "rb")
+data = pickle.load(f1)  # Load the data into a variable
+print(data)            # Display the unpickled list
+f1.close()
