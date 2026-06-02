@@ -1,7 +1,7 @@
 # Multi-tasking or Multi-Processing
 """the ability to do a multiple simultaneously is called multi-tasking"""
 
-Single Therading
+# Single Therading
 import time
 class demo:
     def printname(self):
