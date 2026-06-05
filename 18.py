@@ -78,3 +78,27 @@ def makePayment(method):
     method.pay()
 makePayment(CreditCard())
 makePayment(UPI())
+
+#best example for polymorphism
+class credit:
+    def process_amount(self, amount):
+        return f"processing amount for credit car {amount}"
+
+class paypal:
+    def process_amount(self, amount):
+        return f"processing amount for paypal car {amount}"
+
+class bitcoin:
+    def process_amount(self, amount):
+        return f"processing amount for bitcoin car {amount}"
+
+def checkout(process_method, total_amount):
+    print(process_method.process_amount(total_amount))
+
+c1 = credit()
+p1 = paypal()
+b1 = bitcoin()
+
+checkout(c1, 1234)
+checkout(p1, 5678)
+checkout(b1, 90987)
