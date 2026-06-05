@@ -1,5 +1,5 @@
 #overriding and overloading
-#same name but same number of parameter
+#Overriding : same name but same number of parameter
 class A:
     def disp(self):
         print("class A")
@@ -13,6 +13,24 @@ z=C()
 z.disp()
 z.disp()
 z.disp()
+
+class gec:
+    def total(self):
+        self.course=3
+        print(self.course)
+class ai(gec):
+    def total(self):
+        self.students=63
+        print(self.students)
+class cs(ai):
+    def total(self):
+        self.cstudent=65
+        print(self.cstudent)
+        ai.total(self)
+        gec.total(self)
+c1=cs()
+c1.total()
+
 
 #Using super() in Overriding
 class Animal:
