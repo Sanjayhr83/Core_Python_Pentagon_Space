@@ -4,6 +4,7 @@
 import time
 class demo:
     def printname(self):
+        print("Single Threading")
         l=["sanjay","rajappa","shashank"]
         for i in l:
             print(i)
@@ -28,6 +29,7 @@ import time
 from threading import Thread
 class Task(Thread):
     def run(self):
+        print("\nMulti-Threading")
         l = ["sanjay", "rajappa", "shashank"]
         for i in l:
             print(i)
