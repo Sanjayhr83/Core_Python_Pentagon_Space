@@ -10,9 +10,9 @@ class C(B):
     def disp(self):
         print("class C")
 z=C()
-z.disp()
-z.disp()
-z.disp()
+z.disp()    #class C
+z.disp()    #class C
+z.disp()    #class C
 
 class gec:
     def total(self):
