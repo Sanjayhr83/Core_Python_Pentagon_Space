@@ -42,6 +42,20 @@
 # print(data)
 # ptr4.close()
 
+
+"""Write Program to display take 10 names from the user store in the file and print 7th name from the file"""
+for i in range(10):
+    name=input("enter your name : ")
+    with open("task.txt","a") as f:
+        f.write(name + "\n")
+
+with open("task.txt","r") as f:
+    data=f.readlines()
+    print(data[6])
+    f.close()
+
+
+
 #tell() and seek()
 #tell() : it will give the current position of the cursor
 #seek() : using this seek() method we can move the cursor from one position to another position
